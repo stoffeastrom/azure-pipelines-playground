@@ -25,5 +25,7 @@ jobs:
         displayName: Install
       - script: npm run test:unit
         displayName: Unit tests
-      - script: npm run test:component
+      - script: |
+          npx webdriver-manager update --ie
+          npm run test:component
         displayName: Component tests
