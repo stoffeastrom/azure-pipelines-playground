@@ -14,3 +14,9 @@ jobs:
     vmImage: 'vs2017-win2016'
   steps:
   - script: echo hello from Windows
+  - task: NodeTool@0 
+    inputs:
+      versionSpec: $(node_version)
+
+  - script: yarn
+  - script: npm test
