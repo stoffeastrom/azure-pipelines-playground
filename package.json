@@ -4,7 +4,8 @@
   "description": "azure pipelines playground",
   "main": "src/index.js",
   "scripts": {
-    "test": "aw"
+    "test:unit": "aw --test test/unit/*.spec.js",
+    "test:component": "aw protractor -c test/component/aw.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "@after-work.js/aw": "6.0.0-dev.20190215.0",
     "@babel/core": "7.2.2",
     "@babel/preset-env": "7.3.1",
-    "babel-plugin-istanbul": "5.1.0"
+    "babel-plugin-istanbul": "5.1.0",
+    "protractor": "5.4.2"
   }
 }

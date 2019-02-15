@@ -23,5 +23,7 @@ jobs:
 
       - script: yarn
         displayName: Install
-      - script: npm test
-        displayName: Test
+      - script: npm test:unit
+        displayName: Unit tests
+      - script: npm test:component
+        displayName: Component tests
