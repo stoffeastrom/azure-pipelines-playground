@@ -1,20 +1,21 @@
 jobs:
-- job: Linux
-  pool:
-    vmImage: 'ubuntu-16.04'
-  steps:
-  - script: echo hello from Linux
-- job: macOS
-  pool:
-    vmImage: 'macOS-10.13'
-  steps:
-  - script: echo hello from macOS
+# - job: Linux
+#   pool:
+#     vmImage: 'ubuntu-16.04'
+#   steps:
+#   - script: echo hello from Linux
+# - job: macOS
+#   pool:
+#     vmImage: 'macOS-10.13'
+#   steps:
+#   - script: echo hello from macOS
+variables:
+  node_version: 10.x
 - job: Windows
   pool:
     vmImage: 'vs2017-win2016'
   steps:
-  - script: echo hello from Windows
-  - task: NodeTool@0 
+  - task: NodeTool@0
     inputs:
       versionSpec: $(node_version)
 
