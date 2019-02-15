@@ -1,5 +1,5 @@
 const path = require("path");
-
+console.error("IE WebDriver:", process.env.IEWebDriver);
 module.exports = {
   capabilities: {
     name: "desktop-chrome",
