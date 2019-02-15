@@ -9,6 +9,8 @@ module.exports = {
   },
   specs: [path.resolve(__dirname, "test/hello.spec.js")],
   artifactsPath: "test/component/__artifacts__",
-  seleniumArgs: [`-Dwebdriver.ie.driver=${process.env.IEWebDriver}`],
+  localSeleniumStandaloneOpts: {
+    jvmArgs: [`-Dwebdriver.ie.driver=${process.env.IEWebDriver}`]
+  },
   directConnect: false
 };
