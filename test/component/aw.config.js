@@ -1,5 +1,5 @@
 const path = require("path");
-const IEWebDriver = `${process.env.IEWebDriver}\IEDriverServer.exe`;
+const IEWebDriver = `${process.env.IEWebDriver}\\IEDriverServer.exe`;
 console.error("IE WebDriver:", IEWebDriver);
 module.exports = {
   capabilities: {
