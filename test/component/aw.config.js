@@ -5,7 +5,7 @@ module.exports = {
   capabilities: {
     name: "desktop-chrome",
     browserName: "internet explorer",
-    platform: "ANY",
+    platform: "WINDOWS",
     version: "11"
   },
   specs: [path.resolve(__dirname, "test/hello.spec.js")],
