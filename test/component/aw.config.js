@@ -13,5 +13,10 @@ module.exports = {
   localSeleniumStandaloneOpts: {
     jvmArgs: [`-Dwebdriver.ie.driver=${IEWebDriver}`]
   },
-  directConnect: false
+  directConnect: false,
+  mochaOpts: {
+    ui: "bdd",
+    reporter: "spec",
+    enableTimeouts: false
+  }
 };
