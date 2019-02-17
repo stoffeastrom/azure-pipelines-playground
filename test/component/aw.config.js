@@ -9,6 +9,7 @@ module.exports = {
     version: "11"
   },
   specs: [path.resolve(__dirname, "hello.spec.js")],
+  "filter.protractor.files": "**/test/component/**",
   artifactsPath: "test/component/__artifacts__",
   localSeleniumStandaloneOpts: {
     jvmArgs: [`-Dwebdriver.ie.driver=${IEWebDriver}`]
