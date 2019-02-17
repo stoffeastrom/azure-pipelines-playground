@@ -3,7 +3,7 @@ const IEWebDriver = `${process.env.IEWebDriver}\\IEDriverServer.exe`;
 console.error("IE WebDriver:", IEWebDriver);
 module.exports = {
   capabilities: {
-    name: "desktop-chrome",
+    name: "desktop-ie",
     browserName: "internet explorer",
     platform: "WINDOWS",
     version: "11"
@@ -13,10 +13,5 @@ module.exports = {
   localSeleniumStandaloneOpts: {
     jvmArgs: [`-Dwebdriver.ie.driver=${IEWebDriver}`]
   },
-  directConnect: false,
-  mochaOpts: {
-    ui: "bdd",
-    reporter: "spec",
-    enableTimeouts: false
-  }
+  directConnect: false
 };
