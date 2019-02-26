@@ -1,1 +1,1 @@
-export default () => 'azure';
+module.exports = () => 'azure';
